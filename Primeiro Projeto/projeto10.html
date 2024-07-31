@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+</head>
+<body>
+
+    <!-- A tag <FORM> que significa: "Formulário" é usada para fazer formulários e dentro dela usamos outra tag que se chama: <INPUT> e ela tem um atributo que se chama: "type" que significa: "Tipo" e consegue dar à tag muitas funções como: botões, caixas de marque, áreas de senha, etc... mas também tem mais uma tag que fica dentro do FORM que se chama: <TEXTAREA> que significa: "Área de texto" e cria uma área de texto para escrever e geralmente se pode aumentar ou diminuir a área como se fosse um aplicativo aberto no seu computador ou  Samsung DEX     Obs.: Todas as tags que aparecem montadas ou citadas são maiúsculas para chamar atenção naquela parte -->
+
+    <h2>Login</h2>
+    <form action="">
+        E-mail:<br>
+        <input type="text" name="login" id="login"><br>
+
+        Senha:<br>
+        <input type="password" name="senha" id="senha"><br>
+
+        <input type="submit" value="Confirmar">
+    </form>
+
+    <h2>Cadastrar-se</h2>
+    <form action="">
+        E-mail:<br>
+        <input type="text" name="login2" id="login2"><br>
+
+        Senha:<br>
+        <input type="password" name="senha2" id="senha2"><br>
+
+        Sexo:<br>
+        <input type="radio" name="sexo" id="sexo" value="M"> Masculino<br>
+        <input type="radio" name="sexo" id="sexo" value="F"> Feminino<br>
+        <input type="radio" name="sexo" id="sexo" value="N"> Não quero dizer...<br><br>
+
+        Interesses:<br>
+        <input type="checkbox" name="interesses" id="interesses"> Esportes<br>
+        <input type="checkbox" name="interesses" id="interesses"> Cursos<br>
+        <input type="checkbox" name="interesses" id="interesses"> Moda<br><br>
+
+        Estado:<br><br>
+        <select name="estado" id="estado">
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+            <option value="am">AM</option>
+            <option value="pa">PA</option>
+            <option value="pr">PR</option>
+            <option value="rn">RN</option>
+            <option value="rs">RS</option>
+            <option value="sc">SC</option>
+            <option value="pb">PB</option>
+            <option value="pe">PE</option>
+            <option value="mg">MG</option>
+            <option value="ap">AP</option>
+            <option value="ba">BA</option>
+            <option value="ce">CE</option>
+            <option value="df">DF</option>
+            <option value="es">ES</option>
+            <option value="go">GO</option>
+            <option value="ma">MA</option>
+            <option value="mt">MT</option>
+            <option value="ms">MS</option>
+            <option value="pi">PI</option>
+            <option value="ro">RO</option>
+            <option value="rr">RR</option>
+            <option value="se">SE</option>
+            <option value="to">TO</option>
+            <option value="al">AL</option>
+            <option value="ac">AC</option>
+        </select><br><br>
+
+        Observações:<br>
+        <textarea name="obs" id="obs"></textarea><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

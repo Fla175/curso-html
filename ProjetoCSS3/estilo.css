@@ -1,0 +1,11 @@
+/* Este arquivo está linkado com o arquivo: "pagina1.html"... */
+
+.texto{
+    color: red;
+    background-color: orange;
+}
+
+.fundo{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+}
