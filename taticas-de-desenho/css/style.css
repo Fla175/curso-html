@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@font-face {
+    font-family: "Edu Hand";
+    src: url(../fonts/EduAUVICWANTHand-Regular.woff);
+    src: url(../fonts/EduAUVICWANTHand-Regular.woff2);
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -16,7 +20,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-family: "Edu Hand", cursive;
     font-weight: 300;
 }
 nav {
