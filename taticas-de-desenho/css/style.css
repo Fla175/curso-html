@@ -4,8 +4,14 @@
     src: url(../fonts/EduAUVICWANTHand-Regular.woff2);
 }
 
-body {
-    font-family: Arial, sans-serif;
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter18pt-Regular.woff);
+    src: url(../fonts/Inter18pt-Regular.woff2);
+}
+
+* {
+    font-family: Inter, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -21,6 +27,7 @@ header {
 header h1 {
     margin: 0;
     font-weight: 300;
+    font-family: "Edu Hand", cursive;
 }
 nav {
     border-top: 1px black solid;
@@ -90,7 +97,7 @@ img{
 }
 
 span{
-    font-family: cursive;
+    font-family: "Edu Hand", cursive;
     font-weight: 300;
 }
 
