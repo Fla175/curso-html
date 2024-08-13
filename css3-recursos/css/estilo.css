@@ -1,0 +1,16 @@
+@keyframes the-box {
+    from {
+        background: rgb(255, 116, 92);
+    }
+    to {
+        background: rgba(101, 206, 101, 0.737);
+    }
+}
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: red;
+    animation-name: the-box;
+    animation-duration: 5s;
+}
