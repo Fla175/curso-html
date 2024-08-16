@@ -1,111 +1,36 @@
-@font-face {
-    font-family: "Edu Hand";
-    src: url(../fonts/EduAUVICWANTHand-Regular.woff);
-    src: url(../fonts/EduAUVICWANTHand-Regular.woff2);
-}
-
-@font-face {
-    font-family: Inter;
-    src: url(../fonts/Inter18pt-Regular.woff);
-    src: url(../fonts/Inter18pt-Regular.woff2);
-}
-
 * {
     font-family: Inter, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+@font-face {
+    font-family: "Edu Hand";
+    src: url(../fonts/EduAUVICWANTHand-Regular.woff2) format('woff2'),
+         url(../fonts/EduAUVICWANTHand-Regular.woff) format('woff'),
+         url(../fonts/EduAUVICWANTHand-Regular.ttf) format('truetype');
 }
 
-header h1 {
-    margin: 0;
-    font-weight: 300;
-    font-family: "Edu Hand", cursive;
-}
-nav {
-    border-top: 1px black solid;
-    background: #333;
-    padding: 10px 0;
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter18pt-Regular.woff2) format('woff2'),
+         url(../fonts/Inter18pt-Regular.woff) format('woff'),
+         url(../fonts/Inter18pt-Regular.ttf) format('truetype');
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 400;
-    padding: 5px 10px;
-    display: inline-block;
-}
-
-nav ul li a:hover {
-    background: #fff;
-    color: #333;
-    padding: 10px;
-    margin: 0 15px;
-    border-radius: 5px;
-}
-
-main {
-    padding: 20px;
-}
-
-main section #title {
-    text-align: center;
-}
-
-main section {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-img{
+img {
     display: block;
     margin-right: auto;
-    margin-top: auto;
     margin-left: auto;
-    margin-bottom: auto;
-
-    width: 75%;
-
+    width: 100%;
+    max-width: 75%;
     border: 2px solid #333;
     border-radius: 9px;
 }
 
-#lista{
-    font-family: 'Courier New', Courier, monospace;
-}
-
-span{
+span {
     font-family: "Edu Hand", cursive;
     font-weight: 300;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    bottom: 0;
 }
