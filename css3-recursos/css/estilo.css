@@ -1,4 +1,4 @@
-@keyframes the-box {
+/* @keyframes the-box {
     from {
         background: rgb(255, 116, 92);
         -webkit-background: rgb(255, 116, 92);
@@ -98,4 +98,19 @@
     -webkit-animation: the-box 5s 2s 1000 alternate;
     -moz-animation: the-box 5s 2s 1000 alternate;
     -o-animation: the-box 5s 2s 1000 alternate;
+} */
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: orange;
+}
+
+#caixa:hover {
+    width: 400px;
+    background: yellow;
+    transition: all 1,5s;
+    -webkit-transition: all 1,5s;
+    -moz-transition: all 1,5s;
+    -o-transition: all 1,5s;
 }
