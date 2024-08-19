@@ -35,10 +35,16 @@ span {
     font-weight: 300;
 }
 
+section {
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
 h2 {
     text-align: center;
 }
 
 #pag {
     color: #8c8c8c;
+    font-weight: 700;
 }
