@@ -2,3 +2,25 @@ header {
     border: 1px solid #ccc;
     background: #f2f2f2;
 }
+
+nav {
+    border: 1px solid green;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+aticle {
+    background: orange;
+}
+
+section {
+    border: 1px dotted #fff;
+}
+
+aside {
+    background: rgb(0, 221, 255);
+}
+
+footer {
+    background: #ccc;
+}
