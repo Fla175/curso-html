@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Flexible Box Layout</title>
+    <style>
+        #conteudo {
+            background: #dcdcdc;
+            height: 600px;
+            display: flex;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background: white;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item" style="padding-top: 60px;">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </div>
+</body>
+</html>
