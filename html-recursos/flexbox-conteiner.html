@@ -9,12 +9,28 @@
             background: #dcdcdc;
             height: 600px;
             display: flex;
-
+            /*
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: space-around;
-            align-items: baseline;
+            align-items: baseline; */
         }
+        /*
+         #ordem1 {
+            order: 1;
+        }
+
+        #ordem2 {
+            order: 2;
+        }
+
+        #ordem3 {
+            order: 3;
+        }
+
+        #ordem4 {
+            order: 4;
+        } */
 
         .item {
             width: 100px;
@@ -22,16 +38,18 @@
             margin: 10px;
             background: white;
             border: 1px solid gray;
+            flex-grow: 1;
+            flex-basis: 200px;
         }
     </style>
 </head>
 <body>
     <h1>Flexbox</h1>
     <div id="conteudo">
-        <div class="item" style="padding-top: 60px;">01</div>
-        <div class="item">02</div>
-        <div class="item">03</div>
-        <div class="item">04</div>
+        <div class="item ordem3">01</div>
+        <div class="item ordem1">02</div>
+        <div class="item item3 ordem4">03</div>
+        <div class="item ordem2">04</div>
     </div>
 </body>
 </html>
