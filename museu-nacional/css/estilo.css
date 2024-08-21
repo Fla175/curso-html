@@ -127,10 +127,11 @@ footer {
     color: #666;
 }
 
-footer a {
+footer>p a {
     color: #af670a;
+    padding: 2px 10px;
 }
 
-footer a:hover {
+footer>p a:hover {
     color: #227115;
 }
