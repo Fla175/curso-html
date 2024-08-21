@@ -1,7 +1,7 @@
 /* Estrutura do site
 ------------------------------------ */
 body {
-    background: #f4f2ec url(../img/fundo.png) repeat-x;
+    background: #f4f2ec url(../imagens/fundo.png) repeat-x;
     font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
     font-size: 12px;
     line-height: 1.6;
@@ -33,7 +33,7 @@ a:hover {
     height: 21px;
     text-indent: -9999px;
     display: block;
-    background: url(../img/logo.png) no-repeat;
+    background: url(../imagens/logo.png) no-repeat;
 }
 
 /* Barra de navegação 
