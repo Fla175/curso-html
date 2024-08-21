@@ -1,7 +1,7 @@
 /* Estrutura do site
 ------------------------------------ */
 body {
-    background: #f4f2ec url(../imagens/fundo.png) repeat-x;
+    background: #f4f2ec;
     font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
     font-size: 12px;
     line-height: 1.6;
@@ -94,6 +94,7 @@ aside ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    background: url(../imagens/fundo.png);
 }
 
 aside ul li {
@@ -103,11 +104,12 @@ aside ul li {
 aside ul li a {
     display: block;
     padding: 5px;
-    background: #f9f9f9;
+    background: url(../imagens/fundo-foto.png);
     border: 1px solid #e3e3e3;
     text-decoration: none;
     color: #333;
     transition: background-color 0.3s;
+
 }
 
 aside ul li a:hover {
