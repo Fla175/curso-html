@@ -1,6 +1,6 @@
 /*
 * 
-* @author Jamilton Damasceno
+* @author Flávio Freires Pomin
 */
 
 /* Layout
@@ -30,12 +30,12 @@ nav.navbar-transparente {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-	color: #9bf0e1;
+	color: #00ff6a;
 }
 
 .navbar-light .navbar-toggler {
     color: rgba(255,255,255,.5);
-    border-color: rgba(255,255,255,0.5);
+    border-color: rgba(255,255,255,0.89);
 }
 
 .divisor {
@@ -55,8 +55,14 @@ nav.navbar-transparente {
 	border-radius: 500px;
 	-webkit-border-radius: 500px;
     -moz-border-radius: 500px;
+	-ms-border-raidus: 500px;
+	-o-border-radius: 500px;
     text-transform: uppercase;
     transition: background 0.4s, color 0.4s;
+	-webkit-transition: background 0.4s, color 0.4s;
+	-moz-transition: background 0.4s, color 0.4s;
+	-ms-transition: background 0.4s, color 0.4s;
+	-o-transition: background 0.4s, color 0.4s;
     padding: 10px 20px;
 }
 
@@ -114,9 +120,11 @@ nav.navbar-transparente {
 }
 
 .rotacionar {
-	-ms-transform: rotate(30deg); /* IE 9 */
-    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
-    transform: rotate(30deg);
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
 	padding-left: 80px;
 }
 
@@ -140,7 +148,7 @@ footer .navbar-nav a {
 }
 
 footer .navbar-nav a:hover {
-	color: #9bf0e1;
+	color: #00ff6a;
 	text-decoration: none;
 }
 
