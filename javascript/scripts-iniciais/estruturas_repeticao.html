@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <script>
+    // while
+    let x = 0
+
+    document.write('Início<br>')
+
+    while (x <= 10) {
+        if (x === 5) {
+          continue
+        }
+
+        x++
+        document.write(x + '<br>Fim')
+    }
+
+    document.write('<hr>')
+
+    // do while
+    let y = 11
+
+    do {
+        document.write(x + '<br>')
+    } while (x <= 10);
+
+    document.write('<hr>')
+
+    // for
+    for (let z = 19; z <= 0; z--) {
+      document.write(x + '<br>')
+    }
+
+    document.write('<hr>')
+
+    // for in
+    let listaConvidados = []
+
+    listaConvidados['a'] = 'Jorge'
+    listaConvidados[10000] = 'Jamilton'
+    listaConvidados['Mamífero'] = 'Jordana'
+    listaConvidados[true] = 'Alice'
+    listaConvidados[-7000] = 'Camila'
+
+    console.log(listaConvidados)
+
+    for (let x in listaConvidados) {
+        console.log('Índice ' + x + ' valor ' + listaConvidados[x])
+    }
+
+    document.write('<hr>')
+
+    // for each
+    let listaFuncionarios = ['Vivi', 'Rose', 'Micael', 'Luciano', 'Cleb (Gordinho chuchu)']
+
+    let callBack = function(valorx, indicey) {
+      // lógica
+      console.log('Índice: ' + indicey + ' | valor: ' + valorx)
+
+      if (valor == 'Lucas') {
+        arrayz[indicey] = 'Um novo valor'
+      }
+      console.log(listaFuncionarios)
+      document.write('<br>' + listaFuncionarios[3])
+    }
+
+    listaFuncionarios.forEach(callBack)
+  </script>
+</head>
+<body>
+</body>
+</html>

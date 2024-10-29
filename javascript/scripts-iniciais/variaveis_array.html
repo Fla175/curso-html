@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        // variáveis normais:
+
+        // string
+        let string = 'xuxa'
+
+        // boolean
+        let booleana = true
+
+        // number
+        let numero = 45
+
+        // arrays:
+
+            // arrays normais:
+
+                // 1º forma
+                let idadeXuxa = Array()
+
+                chuchu[1] = 'xuxa'
+                chuchu[2] = 'tem'
+                chuchu[3] = '50'
+                chuchu[4] = 'anos'
+
+                // 1º forma v1.5
+                let seAcalme = Array('Si', 'acalmi,', 'si', 'acalmi')
+
+                // 2º forma
+                let nonNisiTeDomine = []
+
+                Domine[1] = 'Non'
+                Domine[2] = 'nisi'
+                Domine[3] = 'te,'
+                Domine[4] = 'Domine'
+
+                // 2º forma v.1.4
+                var frutas = ['Banana', 'Caju', 'Carambola', 'Manga', 'Rambotã']
+
+            // arrays multidimensionais:
+
+                let carrinhoOnline = []
+
+                carrinhoOnline['Samsung'] = []
+
+                    // sub-array
+                    carrinhoOnline['Samsung']['a'] = 'Galaxy S9'
+                    carrinhoOnline['Samsung']['b'] = 'Galaxy S20 FE'
+                    carrinhoOnline['Samsung']['c'] = 'Galaxy Note 20 FE'
+                    carrinhoOnline['Samsung']['d'] = 'Galaxy S23 Ultra FE'
+
+                carrinhoOnline['Xiaomi'] = []
+
+                    // sub-array
+                    carrinhoOnline['Xiaomi']['a'] = 'Fone Xiaomi'
+                    carrinhoOnline['Xiaomi']['b'] = 'Celular Xiaomi'
+                    carrinhoOnline['Xiaomi']['c'] = 'Moto Xiaomi'
+
+                carrinhoOnline['Apple'] = []
+
+                    // sub-array
+                    carrinhoOnline['Apple']['IPhone'] = []
+
+                        // sub-sub-array
+                        carrinhoOnline['Apple']['IPhone']['a'] = 'IPhone'
+                        carrinhoOnline['Apple']['IPhone']['b'] = 'IPhone 2'
+                        carrinhoOnline['Apple']['IPhone']['c'] = 'IPhone 3'
+                        carrinhoOnline['Apple']['IPhone']['d'] = 'IPhone 4'
+                        carrinhoOnline['Apple']['IPhone']['e'] = 'IPhone 4s'
+                        carrinhoOnline['Apple']['IPhone']['f'] = 'IPhone 5'
+                        carrinhoOnline['Apple']['IPhone']['g'] = 'IPhone 5s'
+                        carrinhoOnline['Apple']['IPhone']['h'] = 'IPhone 6 Plus'
+                        carrinhoOnline['Apple']['IPhone']['i'] = 'IPhone 6'
+                        carrinhoOnline['Apple']['IPhone']['j'] = 'IPhone 7 Plus'
+                        carrinhoOnline['Apple']['IPhone']['k'] = 'IPhone 7'
+                        carrinhoOnline['Apple']['IPhone']['l'] = 'IPhone 8 Plus'
+                        carrinhoOnline['Apple']['IPhone']['m'] = 'IPhone 8'
+                        carrinhoOnline['Apple']['IPhone']['n'] = 'IPhone XS'
+                        carrinhoOnline['Apple']['IPhone']['o'] = 'IPhone 11 Pro Max'
+                        carrinhoOnline['Apple']['IPhone']['p'] = 'IPhone 11 Max'
+                        carrinhoOnline['Apple']['IPhone']['q'] = 'IPhone 11'
+                        carrinhoOnline['Apple']['IPhone']['s'] = 'IPhone 11S'
+                        carrinhoOnline['Apple']['IPhone']['t'] = 'IPhone 12 Pro Max'
+                        carrinhoOnline['Apple']['IPhone']['u'] = 'IPhone 12 Max'
+                        carrinhoOnline['Apple']['IPhone']['v'] = 'IPhone 12'
+                        carrinhoOnline['Apple']['IPhone']['w'] = 'IPhone 12S'
+                        carrinhoOnline['Apple']['IPhone']['x'] = 'IPhone 13 Pro Max'
+                        carrinhoOnline['Apple']['IPhone']['y'] = 'IPhone 13 Max'
+                        carrinhoOnline['Apple']['IPhone']['z'] = 'IPhone 13'
+                        carrinhoOnline['Apple']['IPhone']['aa'] = 'IPhone 14 Pro Max'
+                        carrinhoOnline['Apple']['IPhone']['ae'] = 'IPhone 14 Max'
+                        carrinhoOnline['Apple']['IPhone']['ai'] = 'IPhone 14'
+                        carrinhoOnline['Apple']['IPhone']['ao'] = 'IPhone 15 Pro Max'
+                        carrinhoOnline['Apple']['IPhone']['au'] = 'IPhone 15 Max'
+                        carrinhoOnline['Apple']['IPhone']['ea'] = 'IPhone 15'
+                        carrinhoOnline['Apple']['IPhone']['ee'] = 'IPhone 16 Pro Max'
+                        carrinhoOnline['Apple']['IPhone']['ei'] = 'IPhone 16 Max'
+                        carrinhoOnline['Apple']['IPhone']['eo'] = 'IPhone 16'
+
+                    // sub-array
+                    carrinhoOnline['Apple']['Machintosh'] = []
+
+                        // sub-sub-array
+                        carrinhoOnline['Mac']['Machintosh']['a'] = 'Mac Plus'
+                        carrinhoOnline['Mac']['Machintosh']['c'] = 'Mac Air'
+
+                carrinhoOnline['Nokia']['Telefones'] = []
+
+                    // sub-array
+                    carrinhoOnline['Nokia']['Telefones']['a'] = 'Nokia Tijolão'
+                    carrinhoOnline['Nokia']['Telefones']['b'] = 'Nokia Novo'
+
+            console.log(carrinhoOnline)
+
+            // inclusão e exclusão de elementos array
+            let itens = []
+
+                itens[0] = 'Galaxy S20 FE'
+                itens[1] = 'Galaxy Book Go'
+                itens[2] = 'Galaxy Buds Live'
+                console.log(itens)
+
+                // inclusão de elementos no começo
+                itens.unshift('Galaxy S23 FE')
+                console.log(itens)
+
+                // inclusão de elementos no final
+                itens.push('Carregador')
+                console.log(itens)
+
+                // exclusão de elementos no começo
+                itens.shift()
+                console.log(itens)
+
+                // exclusão de elementos no final
+                itens.pop()
+                console.log()
+
+            // método de pesquisa dentro de arrays
+            let animes = []
+
+                animes[0] = 'Saint Seiya'
+                animes[1] = 'Inazuma Eleven'
+                animes[2] = 'One Piece'
+                animes[3] = 'Yu Gi Oh!'
+                animes[4] = "JoJo's no Kimyo na Boken"
+                animes[5] = 'Naruto'
+                animes[6] = 'Black Clover'
+
+            let YuGiOh = animes.indexOf('Yu Gi Oh!')
+
+            if ( === -1) {
+                console.log('Elemento não existe')
+            } else {
+                console.log('Elemento existe na posição ' + YuGiOh)
+            }
+
+            // ordenação de arrays com números
+            let lista_numeros = []
+
+                lista_numeros[0] = 529
+                lista_numeros[1] = 7
+                lista_numeros[2] = 4
+                lista_numeros[3] = 90
+                lista_numeros[4] = 45
+                lista_numeros[5] = 460
+                lista_numeros[6] = 16
+                lista_numeros[7] = 5
+                lista_numeros[8] = 1
+                lista_numeros[9] = 234
+
+            console.log(lista_numeros.sort(ordenaNumeros))
+
+            function ordenaNumeros(a, b) {
+                return a - b
+            }
+    </script>
+</head>
+<body>
+</body>
+</html>

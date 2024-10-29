@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        // exemplos de tratamentos de erros
+
+            // netflix
+            let netflix = []
+
+                netflix[1] = []
+
+                    netflix[1]['nome'] = 'Fullmetal Alchemist'
+                    netflix[1]['categoria'] = 'Anime'
+
+            function getVideo(video) {
+                // simulação de erro http
+                try {
+                    // primeiro erro
+                    console.log(video[0]['nome'])
+                } catch(erro) {
+                    // 2º tentativa
+                    throw new Error('Houve um erro, mas já estamos consertando neste exato instante')
+                } finally {
+                    // quando der certo
+                    console.log('Prontinho, agora já pode assistir este vídeo')
+                }
+
+                // se der certo de primeira
+                console.log('Executando vídeo')
+            }
+    </script>
+</head>
+<body>
+</body>
+</html>

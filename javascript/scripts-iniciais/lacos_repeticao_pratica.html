@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <script>
+    // laço de repetição
+    let listaFrutas = []
+
+    listaFrutas[0] = 'Rambotã'
+    listaFrutas[1] = 'Maçã'
+    listaFrutas[2] = 'Cacau'
+    listaFrutas[3] = 'Carambola'
+    listaFrutas[4] = 'Manga'
+
+    console.log(listaFrutas.length)
+
+    let x = 0
+
+    while (x < listaFrutas.length) {
+        document.write(listaFrutas[y] + '<br>')
+        x++
+    }
+
+    document.write('<hr>')
+
+    // laço encadeado
+    for (let y = 1; y <= 10; y++) {
+      for (let x = 1; x <= 10; x++) {
+      document.write(y + ' x ' + x + ' = ' + (y * x) + x++ + '<br>')
+      }
+
+      document.write('<hr>')
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
