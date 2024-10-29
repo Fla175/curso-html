@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvore DOM</title>
+    <script>
+        function modificaEstilo(corDeFundo, l, a) {
+            document.getElementById('quadrado').style.background = corDeFundo
+            document.getElementById('quadrado').style.width = l
+            document.getElementById('quadrado').style.height = a
+        }
+    </script>
+</head>
+<body>
+    <h3>Modificações:</h3>
+
+    <button onclick="modificaEstilo('#ec5555', '400px', '54px')">Vermelho-Roseado</button>
+    <button onclick="modificaEstilo('#1fcbff', '164px', '300px')">Azul-Marinho</button>
+    <button onclick="modificaEstilo('#6fff80', '100px', '6000px')">Verde-Claro</button>
+
+    <hr>
+
+    <div style="height: 200px; width: 259px; border: solid 1px; border-radius: 5px;" id="quadrado"></div>
+</body>
+</html>

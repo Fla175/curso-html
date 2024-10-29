@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        let objetos = ['Cadeira', 'Impressora', 'Garfo']
+
+        function adicionarObjetos() {
+            // recuperação do valor inserido no campo do id objeto
+            let objeto = document.getElementById('objeto').value
+
+            // caso tenha algum valor preenchido entra no if
+            if (objeto != '') {
+                
+                // verifica se o valor já não foi inserido antes
+                // se sim, imforma sobre, se não insere o novo valor
+                if (objetos.indexOf(objeto) !== -1) {
+                    alert('Objeto já foi adicionado')
+                } else {
+                    objetos.push(objeto)
+                    console.log(objetos)
+
+                    document.getElementById('objeto').value = ''
+                }
+            }else {
+                alert('informe um objeto válido')
+            }
+        }
+
+        function ordenarObjetos() {
+            objetos.sort()
+            console.log(objetos)
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="objeto">
+
+    <button onclick="adicionarObjetos()">Adicionar</button>
+    <button onclick="ordenarObjetos()">Ordenar</button>
+</body>
+</html>

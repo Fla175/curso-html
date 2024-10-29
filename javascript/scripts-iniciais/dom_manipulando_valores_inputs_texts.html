@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvore DOM</title>
+    <script>
+        function distribuiCaracter() {
+            // selecionar o valor digitado
+            var caracter = document.getElementById('entrada').value
+
+            // limpar o campo de digitação
+            document.getElementById('entrada').value = ''
+
+            // limpar os espaços nas extremidades da string
+            caracter.trim()
+
+            switch (caracter) {
+                case '0':
+                    // adicionar o caracter no campo de números
+                    document.getElementById('apenas_numeros').value += caracter
+                    break;
+                
+                case '1':
+                    // adicionar o caracter no campo de números
+                    document.getElementById('apenas_numeros').value += caracter
+                    break;
+
+                case '2':
+                    // adicionar o caracter no campo de números
+                    document.getElementById('apenas_numeros').value += caracter
+                    break;
+
+                case '3':
+                    // adicionar o caracter no campo de números
+                    document.getElementById('apenas_numeros').value += caracter
+                    break;
+
+                case '4':
+                    // adicionar o caracter no campo de números
+                    document.getElementById('apenas_numeros').value += caracter
+                    break;
+
+                case '5':
+                    // adicionar o caracter no campo de números
+                    document.getElementById('apenas_numeros').value += caracter
+                    break;
+
+                case '6':
+                    // adicionar o caracter no campo de números
+                    document.getElementById('apenas_numeros').value += caracter
+                    break;
+
+                case '7':
+                    // adicionar o caracter no campo de números
+                    document.getElementById('apenas_numeros').value += caracter
+                    break;
+
+                case '8':
+                    // adicionar o caracter no campo de números
+                    document.getElementById('apenas_numeros').value += caracter
+                    break;
+
+                case '9':
+                    // adicionar o caracter no campo de números
+                    document.getElementById('apenas_numeros').value += caracter
+                    break;
+
+                default:
+                    // adicionar o caracter no campo de letras
+                    document.getElementById('apenas_letras').value += caracter
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Digite um caracter aqui" onkeyup="distribuiCaracter()" id="entrada">
+    <hr>
+    <span><strong>Letras:</strong></span>
+    <input type="text" disabled id="apenas_letras">
+
+    <span><strong>Número:</strong></span>
+    <input type="text" disabled id="apenas_numeros">
+</body>
+</html>
