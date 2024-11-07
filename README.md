@@ -1,5 +1,3 @@
-<img align="right" alt="" height="300px" src="./cloud.png">
-
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&pause=1000&color=BB00B4&random=false&width=435&height=40&lines=Hello%2C+My+name+is+Flávio+F.+Pomin!+%F0%9F%91%BE%F0%9F%93%9A%F0%9F%92%99)](https://git.io/typing-svg)
 
 <p align="left"> I'm learning HTML, CSS, JS, and Bootstrap. I'm in <strong>Secondary School</strong> right now, and I'm helping with the front-end at MegaNuv, a <strong>Cloud Computing</strong> company. </p>
