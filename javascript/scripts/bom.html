@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // window
+        function abrirPopUp () {
+            let windows = window.open('https://tailwindcss.com/docs/installation/play-cdn', 'i_love_tailwind_css', 'width=300, height=300')
+        }
+
+        function fecharPopUp () {
+            window.close()
+        }
+
+        // screen
+        let altura = window.screen.availHeight
+        let largura = window.screen.availWidth
+
+        document.write('A altura do navegador é de: ' + altura + ' px <br>')
+        document.write('A largura do navegador é de: ' + largura + ' px')
+
+        document.write('<hr>')
+
+        // print (impressão) da página
+        let printTela = window.print()
+
+        if (largura < 500) {
+            document.write('Lógica para impressão do menu versão mobile')
+        } else {
+            document.write('Lógica para impressão do menu versão web')
+        }
+
+        document.write('<hr>')
+
+        // location
+        // let url = window.location.href="https://tailwindcss.com/docs/installation/play-cdn"
+
+        // document.write('<hr>')
+
+        // timeout
+        // setTimeout(function () {document.write('Teste')}, 2000)
+
+        // document.write('<hr>')
+
+        // interval
+        let i = 10000
+        let x = setInterval(
+            function () {
+                document.write(i + '<br>'); i = i -1
+            }
+        , 1000)
+
+        document.write('<hr>')
+
+        // methods
+    </script>
+</head>
+<body>
+    <button onclick="abrirPopUp()" class="cursor-pointer">Abrir Janela</button>
+    <button onclick="fecharPopUp()" class="cursor-pointer">Fechar Janela</button>
+    <button onclick="window.print()" >Imprimir página</button>
+</body>
+</html>

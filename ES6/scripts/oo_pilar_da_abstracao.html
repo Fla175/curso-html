@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript</title>
+
+    <!-- Obrigatório em todos os arquivos desta seção -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        // //modelo do objeto
+        // class ContaBancaria {
+        //     //agencia
+        //     //numeroConta
+        //     //saldo
+        //     //limite
+        //     constructor(){
+        //         this.agencia = 1075
+        //         this.numeroConta = 8351125
+        //         this.saldo = 50
+        //         this.limite = 450
+        //     }
+        //     depositar(valor){
+        //         this.saldo += valor
+        //     }
+        //     sacar(valorSaque){
+        //         this.saldo -= valorSaque
+        //     }
+        //     consultarSaldo(){
+        //         return this.saldo
+        //     }
+        // }
+
+        // let x = new ContaBancaria() //contas diferentes
+        // let y = new ContaBancaria() //contas diferentes
+
+        // console.log(x.consultarSaldo())
+        // x.depositar(450)
+        // console.log(x.consultarSaldo())
+        // x.sacar(200)
+        // console.log(x.consultarSaldo())
+
+        // console.log(y.consultarSaldo())
+
+        // //software para marcenaria
+        // // objetos: cadeira e sofá
+
+        // // paradigma procedural
+
+        //     // cadeira
+        //     // let qtde_pes = prompt('Quantos pés sua cadeira terá?')
+        //     // let giratoria;
+
+        //     //     if (qtde_pes = 1) {
+        //     //         giratoria = true
+        //     //     } else {
+        //     //         giratoria = false
+        //     //     }
+
+        //     // let cor = 'azul'
+
+        //     // array de cadeiras
+        //     // let cadeiras = []
+
+        //     // cadeiras[0]['qtde_pernas'] = 4
+        //     // cadeiras[0]['giratoria'];
+
+        //     // if (cadeiras[0]['qtde_pernas'] = 1) {
+        //     //     cadeiras[0]['giratoria'] = true
+        //     // } else {
+        //     //     cadeiras[0]['giratoria'] = false
+        //     // }
+
+        //     // cadeiras[0]['cor'] = azul
+
+        //     // function girar_cadeira() {
+        //     //     if (giratoria === true) {
+        //     //         console.log('cadeira é giratória')
+        //     //     } else {
+        //     //         console.log('cadeira não é giratória')   
+        //     //     }
+        //     // }
+
+        //     // function adicionar_cadeira(qtde_pernas, giratoria, cor) {
+        //     //     let cadeira = []
+
+        //     //     cadeira['qtde_pernas'] = qtde_pernas
+        //     //     cadeira['giratoria'] = giratoria
+        //     //     cadeira['cor'] = cor
+
+        //     //     cadeiras.push(cadeira)
+        //     // }
+
+        //     // adicionar_cadeira(3, false, verde)
+
+        //     // console.log(cadeiras)
+            
+
+        //     // // girar_cadeira(0)
+
+        //     //----------------------------
+
+        //     // paradigma de OO:
+        //     // Pilar da Abstração: Objeto | Identidade | Características | Ações
+
+        //     class Cadeira {
+        //         constructor(qtde_pernas, giratoria, cor) {
+        //             this.qtde_pernas = qtde_pernas
+        //             this.giratoria = giratoria
+        //             this.cor = cor
+        //         }
+
+        //         girarCadeira() {
+        //             if (this.giratoria === true) {
+        //                 console.log('Girou');
+        //             } else {
+        //                 console.log('cadeira não é giratória');
+                        
+        //             }
+        //         }
+        //     }
+
+        //     let cadeiras = []
+
+        //     cadeiras.push(new Cadeira(4, false, 'vermelho'))
+        //     cadeiras.push(new Cadeira(4, true, 'azul'))
+
+        //     console.log(cadeira)
+        //     // cadeira.girarCadeira()
+        //     // cadeira2.girarCadeira()
+
+        //     // Pilar do Encapsulamento: Seguro | Reutilizável
+
+        //     class Tv {
+        //         constructor () {
+        //             this.relacaoCanais = [2,4,6,7,25,26]
+        //             this.canalAtivo = 7
+        //             this.vol = 6
+        //         }
+
+        //         // getters | setters
+        //         get canalAtivo() {
+        //             return this._canalAtivo
+        //         }
+        //         set canalAtivo(canal) {
+        //             if(this._relacaoCanais.indexOf(canal) !== -1) {
+        //                 this._canalAtivo = canal
+        //             }
+
+                    
+        //         }
+        //     }
+
+        //     let tv = new Tv()
+
+        //     tv.canalAtivo = 7
+        //     console.log(tv.canalAtivo);
+
+        //     // Pilar da Herança: Reutilizável | Manutenção
+
+        //     class Animal {
+        //         constructor() {
+        //             this.cor = 'Branco e marrom'
+        //             this.tamanho = null
+        //         }
+
+        //         dormir() {
+        //             console.log('dormir');
+        //         }
+
+        //         peso() {
+        //             console.log('peso');
+        //         }
+        //     }
+
+        //     class Cachorro extends Animal {
+        //         constructor() {
+        //             super()
+        //             this.orelhas = 'Grandes e caídas'
+        //         }
+
+        //         correr() {
+        //             console.log('Correr');
+        //         }
+
+        //         rosnar() {
+        //             console.log('Rosnar');
+        //         }
+        //     }
+
+        //     class Papagaio extends Passaro {
+        //         constructor() {
+        //             super()
+        //             this.bico = 'Curto'
+        //         }
+
+        //         voar() {
+        //             console.log('voar');
+        //         }
+
+        //         falar() {
+        //             console.log('falar');
+        //         }
+        //     }
+
+        //     class Passaro extends Animal {
+        //         constructor() {
+        //             super()
+        //             this.bico = 'Médio'
+        //         }
+
+        //         voar() {
+        //             console.log('voar');
+        //         }
+
+        //         cantar() {
+        //             console.log('cantar');
+        //         }
+        //     }
+
+        //     let cachorro = new Cachorro()
+        //     let passaro = new Passaro()
+        //     let papagaio = new Papagaio()
+
+        //     // cachorro.dormir()
+        //     // cachorro.correr()
+        //     // cachorro.rosnar()
+        //     // passaro.dormir()
+        //     // passaro.voar()
+        //     // passaro.cantar()
+        //     // papagaio.dormir()
+        //     // papagaio.voar()
+        //     // papagaio.falar()
+
+        //     console.log(cachorro);
+        //     console.log(passaro);
+        //     console.log(papagaio);
+
+            // Operador Super:
+
+            // class Passaro {
+            //     constructor(bico, cor, tamanho, peso) {
+            //         super()
+            //         this.bico = bico
+            //         this.cor = cor
+            //         this.tamanho = tamanho
+            //         this.peso = peso
+            //     }
+
+            //     dormir() {
+            //         console.log('dormir');
+            //     }
+
+            //     peso() {
+            //         console.log('peso');
+            //     }
+
+            //     voar() {
+            //         console.log('voar');
+            //     }
+            // }
+
+            // class Papagaio extends Passaro {
+            //     constructor(sabeFalar) {
+            //         super('Médio')
+            //         this.sabeFalar = sabeFalar
+            //     }
+
+            //     voar() {
+            //         console.log('voar');
+            //     }
+
+            //     falar() {
+            //         console.log('falar');
+            //     }
+            // }
+            
+            // let papagaio1 = new Papagaio(true, 'verde', 25, 'leve')
+            // console.log(papagaio1);
+
+            // let papagaio2 = new Papagaio(false, 'Branco', 10, 'leve')
+            // console.log(papagaio2);
+            
+            // Pilar do Poliformismo: Reutilizável | Sobrescrita de métodos
+
+            class Passaro {
+                constructor(bico, cor, tamanho, peso) {
+                    super()
+                    this.bico = bico
+                    this.cor = cor
+                    this.tamanho = tamanho
+                    this.peso = peso
+                }
+
+                dormir() {
+                    console.log('dormir');
+                }
+
+                voar() {
+                    console.log('voar');
+                }
+            }
+
+            class Avestruz extends Passaro {
+                constructor() {
+                    super('grande', 'preto e branco', 160, 'pesado')
+                }
+
+                enterrarCabeca() {
+                    console.log('enterrar a cabeça');
+                    
+                }
+
+                voar() {
+                    console.log();
+                }
+            }
+
+            class Papagaio extends Passaro {
+                constructor(sabeFalar) {
+                    super('Médio')
+                    this.sabeFalar = sabeFalar
+                }
+
+                falar() {
+                    console.log('falar');
+                }
+            }
+            
+            let papagaio = new Papagaio(true, 'verde', 25, 'leve')
+            console.log(papagaio);
+
+            papagaio.voar()
+
+            let avestruz = new Avestruz(enterrarCabeca)
+            console.log(avestruz);
+
+            avestruz.voar()
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+
