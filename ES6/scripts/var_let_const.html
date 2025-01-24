@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript</title>
+
+    <!-- Obrigatório em todos os arquivos desta seção -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>
+        // var
+
+        var serir = 'Friends'
+        {
+            // block scope
+            var serir = "The Walking Dead"
+            console.log('dentro do bloco: ' + serir)
+        }
+
+        // global scope
+        console.log('fora do bloco: ' + serir)
+
+        //--------------------------------------
+
+        // let é a versão enxuta do var
+
+        let serie = 'Friends'
+        {
+            // block scope
+            let serie = "The Walking Dead"
+            console.log('dentro do bloco: ' + serie)
+        }
+
+        // global scope
+        console.log('fora do bloco: ' + serie)
+
+        //--------------------------------------
+
+        // const não pode ser mudada, e é recomendado o nome ser maiúsculo
+
+        // global scope
+        const XUXU = 'O xuxu come chuchu na sua sopa.'
+
+        function x() {
+            // function scope
+            const XUXU = 'Xuxu gosta de chuchu na sua sopa'
+            console.log('Dentro da função: ' + XUXU)
+        }
+
+        x()
+
+        console.log('Global: ' + XUXU)
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

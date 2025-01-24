@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript</title>
+
+    <!-- Obrigatório em todos os arquivos desta seção -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        
+        class Produto {
+            constructor(descricao, preco) {
+                this.descricao = descricao
+                this.preco = preco
+            }
+
+            verDescricao() {
+                console.log(`${this.descricao} por apenas ${this.preco}`);
+            }
+        }
+
+        let produto = new Produto('Galaxy Book GO', 2200)
+        produto.verDescricao()
+
+        // --------------------------------
+
+        let produtoLiteral = {
+            descricao: 'Monitor Curvo Samsung Odssey 12" ',
+            preco: 11000,
+            
+            verDescricao: function() {
+                console.log(`${this.descricao} por apenas ${this.preco}`);
+            }
+        }
+
+        produtoLiteral.verDescricao()
+
+        // --------------------------------
+
+        // Formulário -> Server
+
+        //   Recupera dados e monta um objeto literal.
+
+        //     Obj. Literal -> JSON -> HTTP -> Server -> Armazenamento
+
+        // --------------------------------
+
+        // Objeto Literal (ES5)
+        
+        // let nome = 'Flávio'
+        // let idade = 12
+        // let sexo = 'Masculino'
+        // let profissão = 'Programador'
+
+        // let objeto = {
+        //     nome: nome,
+        //     idade: idade,
+        //     sexo: sexo,
+        //     profissao: profissao,
+        //     exibirResumo: function() {
+        //         console.log(`${this.nome}, ${this.idade} anos, sexo ${this.sexo}, ${this.profissao}`);
+        //     }
+        // }
+
+        // console.log(objeto);
+        // objeto.exibirResumo()
+
+        // --------------------------------
+
+        // Objeto Literal (ES6)
+
+        // let nome = 'Flávio'
+        // let idade = 12
+        // let sexo = 'Masculino'
+        // let profissão = 'Programador'
+
+        // let objeto = {
+        //     nome,
+        //     idade,
+        //     sexo,
+        //     profissao,
+        //     exibirResumo() {
+        //         console.log(`${this.nome}, ${this.idade} anos, sexo ${this.sexo}, ${this.profissao}`);
+        //     }
+        // }
+
+        // console.log(objeto);
+        // objeto.exibirResumo()
+
+        // --------------------------------
+
+        // Modificação de valores:
+
+        // let nome = 'Flávio'
+        // let idade = 12
+        // let sexo = 'Masculino'
+        // let profissão = 'Programador'
+
+        // let objeto = {
+        //     nome,
+        //     idade,
+        //     sexo,
+        //     profissao,
+        //     exibirResumo() {
+        //         console.log(`${this.nome}, ${this.idade} anos, sexo ${this.sexo}, ${this.profissao}`);
+        //     }
+        // }
+
+        // if (objeto.nome = 'Flávio') {
+        //     objeto.nome + ' Freires Pomin'
+        // }
+
+        // console.log(objeto);
+        // objeto.exibirResumo()
+
+        // --------------------------------
+
+        // Inclusão de Atributos:
+        
+        let pessoa =  {
+            nome: 'Maria',
+            idade: 25
+        }
+
+        console.log();
+        
+    </script>
+</head>
+<body>
+</body>
+</html>
+
