@@ -38,6 +38,14 @@
         // }
         let parOuImpar =  numero =>  numero % 2 === 0 ? 'par' : 'ímpar' //return implicito
         document.write(parOuImpar(7))
+
+        // Parâmetros Default
+        
+        function contarUmaHistoria(personagem = 'Fubá', atividade = 'correr no parque', nome_dono = 'João'){
+            document.write(`Era uma vez um cachorro chamado ${personagem}, ele adorava ${atividade}, seu dono era o ${nome_dono} e eles viveram felizes para sempre`)
+        }
+ 
+        contarUmaHistoria(prompt('personagem da história'), prompt('atividade'), prompt('dono'))
     </script>
 </head>
 <body>

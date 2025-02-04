@@ -119,13 +119,50 @@
 
         // Inclusão de Atributos:
         
-        let pessoa =  {
-            nome: 'Maria',
-            idade: 25
+        // let pessoa =  {
+        //     nome: 'Maria',
+        //     idade: 25
+        // }
+
+        // console.log(pessoa);
+
+        // // adicionando um atributo:
+
+        // if (pessoa.nome = 'Maria') {
+        //     pessoa.sexo = 'Feminino'
+        // }
+
+        // console.log(pessoa);
+        
+        // // adicionando uma função:
+
+        // pessoa.dizerOi = () => console.log('Olá, tudo bem?');
+
+        // pessoa.dizerOi()
+
+        // --------------------------------
+
+        // Objeto Literal Único:
+
+        let assinatura = {
+            idCliente: 1000,
+            descricao: 'Acesso a Internet',
+            status() {
+                console.log('Ativo');
+            }
         }
 
-        console.log();
-        
+        console.log(assinatura.descricao);
+
+        let y = assinatura
+
+        console.log(y.descricao);
+
+        y.descricao = 'Internet + TV + Telefone'
+
+        console.log(y.descricao);
+        console.log(assinatura.descricao);
+
     </script>
 </head>
 <body>

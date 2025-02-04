@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript</title>
+
+    <!-- Obrigatório em todos os arquivos desta seção -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        // destructuring para Arrays
+
+        let frutas = ['Abacaxi', 'uva', 'pera', 'mamão']
+
+        let [a, b, , c] = frutas
+
+        let coisas = [['Abacaxi', 'uva', 'pera', 'mamão'], ['José', 'Maria']]
+
+        let [, [x]] = coisas
+
+        console.log(x);
+
+        // Destructuring para OO
+
+        let produto = {
+            descricao: 'Notebook',
+            preco: 1800,
+            detalhes: {
+                ano: 2021,
+                fabricante: 'Samsung',
+                modelo: 'Galaxy Book GO'
+            }
+        }
+
+        // Obs.: O token da function 'Destructuring Assignment' muda de acordo com no que será feito o processo:
+
+        // Array: []
+        // Objeto (OO): {}
+
+        // let { descricao, preco } = produto
+
+        // let { descricao: d, preco: p } = produto
+
+        // let { descricao: d, preco: p, desconto } = produto
+
+        // let { descricao: d, preco: p, desconto = 5 } = produto
+
+        let { detalhes: { fabricante: f, modelo } } = produto
+        console.log(f, modelo = 'Não Informado');
+
+        // Encaminhamento Individual do Destructuring
+
+        let arr = [10, 20, 30, 40]
+
+        // function teste([ a, b, , e, f = 100 ]) {
+        //     console.log(a, b, e, f);
+        // }
+
+        // teste(arr)
+
+        // Objeto
+
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40
+        }
+
+        function teste( { a: x, d } ) {
+            console.log(x, d);
+        }
+
+        teste(obj)
+
+        // Usando Destructuring com o operador 'Rest'
+
+        // array
+
+        // let array = [10, 20, 30, 40]
+
+        // let [ as, ...resto ] = array
+
+        // console.log(as);
+        // console.log(resto);
+
+        // Objeto
+
+        let object = {
+            a: 10, b: 20, c: 30, d: 40
+        }
+
+        let { as, ...ze } = object
+
+        console.log(a);
+        console.log(ze);
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+
