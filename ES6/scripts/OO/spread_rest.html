@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript</title>
+
+    <!-- Obrigatório em todos os arquivos desta seção -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      
+      // C o n t e x t o
+      //       d o
+      //   S p r e a d
+
+      // S t r i n g
+
+      let tituloArtigo = 'C o m o  u t i l i z a r  o  o p e r a d o r  r e s t / s p r e a d'
+
+      console.log(tituloArtigo);
+      console.log(...tituloArtigo);
+      console.log([tituloArtigo]);
+
+      // A r r a y s
+
+      let listaCursos1 = ['NodeJS e MongoDB', 'ES6, TypeScript e Angular 4']
+      let listaCursos2 = ['Multiplataformas Android/IOS', 'Introdução ao GNU/Linux']
+      let listaCursosCompleto = ['Web Completo', 'Android Completo', ...listaCursos1, ...listaCursos2]
+
+      console.log(listaCursosCompleto);
+
+      // O b j e t o s
+
+      let pessoa = { nome: 'João', idade: 27 }
+      let clone = { endereco: 'Rua Cominho de Neves', ...pessoa }
+
+      console.log(clone);
+
+      // contexto do rest
+
+      function soma(...param) {
+        let resultado = 0
+
+        console.log(param);
+
+        param.forEach()
+
+        return resultado
+      }
+
+      console.log(soma(3, 8, 2, 7, 5, 10, -8, 115));
+
+      function multiplicacao(m, ...p) {
+        console.log(m);
+        let resultado = 0
+        console.log(p);
+
+        p.forEach(v => resultado += m * v)
+
+        return resultado
+      }
+
+      multiplicacao(5, 7 ,12, 3, 49)
+      
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
+

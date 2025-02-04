@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript</title>
+
+    <!-- Obrigatório em todos os arquivos desta seção -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        
+        // Hardcoding: Falta de Flexibilidade | Dificuldade de Manutenção | Menos Reusabilidade | Testes Complicados | Dificuldade na Localização | Desempenho Menor
+
+        // resquição http
+        // resposta http
+
+        let bicicleta1 = {
+            cor: 'Branca',
+            marca: 'Trek',
+            marcha: 'Única',
+            aro: 12,
+            rodinhas: true,
+
+            pedalar() {
+                console.log('pedalando');
+            }
+        }
+
+        let bicicleta2 = {
+            cor: 'Vermelha',
+            marca: 'Viking',
+            marcha: 18,
+            aro: 16,
+            rodinhas: false,
+
+            pedalar() {
+                console.log('pedalando');
+            }
+        }
+
+        console.log(bicicleta1);
+        console.log(bicicleta2);
+
+        // -------------------------------------
+
+        // Factory: Flexível | Manutenção Fácil | Reutilização | Localização | Lógica de Requisição/Resposta HTTP Encapsulada
+
+        // lógica de requisição/resposta http
+
+        let bicicletaFactory = function(cor, marca, marcha, aro, rodinhas) {
+            return {
+                cor,
+                marca,
+                marcha,
+                aro,
+                rodinhas,
+                pedalar() {
+                    console.log('O menino está pedalando');
+                }
+            }
+
+        }
+
+        let bicicleta3 = bicicletaFactory('Azul', 'Trek', '21', 29, false)
+        console.log(bicicleta3);
+
+        console.log(`Cor: ${bicicleta3.cor}`);
+        bicicleta3.pedalar()
+        
+
+    </script>
+</head>
+<body>
+</body>
+</html>
+
